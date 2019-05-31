@@ -1,5 +1,5 @@
 ---
-title: "HIMB Summer Course Independent Project"
+title: "HIMB Summer Course - Remote Sensing Independent Project"
 author: "INSERT YOUR NAME"
 date: "`r format(Sys.Date())`"
 output: 
