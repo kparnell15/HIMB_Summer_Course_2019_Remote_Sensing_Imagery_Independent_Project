@@ -1,4 +1,4 @@
-HIMB Summer Course Independent Project
+HIMB Summer Course - Remote Sensing Independent Project
 ================
 INSERT YOUR NAME
 2019-05-31
