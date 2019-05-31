@@ -56,7 +56,9 @@ Insert here a few sentences and/or dot points to briefly summarize the methods y
 
 You can embed images (e.g., maps, diagrams, screenshots, etc.) by using the following code:
 
-Images on the web: ![optional caption text](https://www.bestfunnies.com/wp-content/uploads/2012/08/Funny-Fish-11.jpg)
+Images on the web:
+
+![optional caption text](https://www.bestfunnies.com/wp-content/uploads/2012/08/Funny-Fish-11.jpg)
 
 To add images from your local files that are stored in the same directory (folder) as your Rproject, replace the web address above with the fliename of your image.
 
