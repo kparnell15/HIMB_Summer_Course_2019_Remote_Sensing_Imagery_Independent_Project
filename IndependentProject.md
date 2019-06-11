@@ -1,7 +1,7 @@
-HIMB Summer Course - Remote Sensing Independent Project
+Florida Manatee Abundance Estimates using Satellite Imagery
 ================
-INSERT YOUR NAME
-2019-05-31
+Kirby Parnell
+2019-06-10
 
 R Markdown information
 ----------------------
@@ -30,37 +30,68 @@ Here is a 'cheat sheet' for how to format text in RMarkdown (e.g., how to make h
 
 <https://www.rstudio.com/wp-content/uploads/2015/02/rmarkdown-cheatsheet.pdf>
 
+Preliminary Notes and Plan
+--------------------------
+
+-   Florida stock includes four regional management units ![Florida manatee distribution within the four designated regional management units. USFWS (2001).](Manatee%20Regional%20Unit.png)
+
+-   "Updated Statewide Abundance Estimates for the Florida Manatee, Technical Report 2018" ![Baseline abundance estimates (with 95% credible intervals and coefficient of variation) by region and survey. Estimates and 95% CRI are rounded to the nearest 10.](FL%20manatee%20abundance%20estimate.png)
+
+-   Potential Locations: King Spring, Three Sisters Spring on Crystal River, Ten Thousand Islands, Haulover Canal Manatee Viewing Area, Blue Spring State Park
+
+-   Criteria to maximize satellite images: which location is best, how often manatees are there? Near big city? We want temporal consistency, as many images we can get from same location and same date every year
+
+-   How many nice images can we get for each of these locations 1. during manatee season and 2. during off-season?
+
+-   Should each area be the same size?
+
 Summary
 -------
 
-Insert here a brief (1-2 sentence) summary of your project. This section will eventually become your abstract.
+Is satellite imagery a viable option to estimate the Florida manatee abandunce? How do counts of manatees from satellite imagery compare to that of traditional aerial surveys?
 
 Question(s)
 -----------
 
-Insert here the specific, testable question(s) your project seeks to answer.
-
--   Question 1:
--   Question 2:
--   etc.
+-   Question 1: How do manatee counts from satellite imagery compare to traditional aerial survey counts from two manatee hotspots in King's Bay, Crystal River, FL?
 
 Introduction
 ------------
 
-Insert here some brief (2-3 sentence) background information on your project (e.g., what the current state of knowledge is on the topic, why your question(s) need to be answered, etc.).
+Manatee estimates are difficult to obtain due to their widespread and changing distribution throughout Florida and the limitations of aerial surveys. Satellite imagery is potentially a new tool to estimate manatee abundance and track temporal and spatial changes.
 
 Methods
 -------
 
-Insert here a few sentences and/or dot points to briefly summarize the methods you're using. Include any details you'd need to know if coming back to this project at a later date when you might not remember exactly what you did this week.
+-   I will look at Kings Bay, Crystal River area because I found this statement online, "Florida manatee (present in Kings Bay and Crystal River NWR year-round, but highest aggregation November – March = approx. 600 manatees vs. summer months = approx. 30 manatees)." Now I have a number to compare my counts from satellites to. See this information at <https://www.fws.gov/refuge/crystal_river/wildlife_and_habitat/florida_manatee.html>
 
-You can embed images (e.g., maps, diagrams, screenshots, etc.) by using the following code:
+-   Manatee Sancuaries are in effect from November 15 to March 31. ![Map of King's Bay, Crystal River, Florida](King's%20Bay%20map.png)
 
-Images on the web:
+-   I will count manatees in Google Earth Pro near King Spring (\#10 on the map) and Idiot's Delight (\#9 on the map).
 
-![optional caption text](https://www.bestfunnies.com/wp-content/uploads/2012/08/Funny-Fish-11.jpg)
+-   Tag each animal in Google Earth Pro
 
-To add images from your local files that are stored in the same directory (folder) as your Rproject, replace the web address above with the fliename of your image.
+1.  **Google Earth Protocol adapted from Liz's Module**
+    -   I need to ask Liz where to find the document that shows the resolution and satellite for each date I use
+    -   Use the Time Slider to select the dates’ you want to count manatees:
+
+        | Date (yyyymmdd) | Resolution (m) | Satellite                             | Provider     |
+        |-----------------|----------------|---------------------------------------|--------------|
+        | 20130115        | 0.15           | NA; aerial imagery                    | Unknown      |
+        | 20130822        | 0.50           | WorldView-1/2, GeoEye-1, or Quickbird | DigitalGlobe |
+        | 20110108        | ~1.00          | Ikonos                                | DigitalGlobe |
+        | 20030412        | ~2.00          | EarlyBird-1 (?)                       | DigitalGlobe |
+
+    -   Use the polygon measurement tool to extract area/perimeter
+    -   Manually copy measurements into excel file
+    -   Tag each manatee using the Add Placemark option
+    -   Drag saved placemarks to My Places
+    -   Frequently save My Places (File -&gt; Save -&gt; Save My Places)
+    -   *Note*: if you need to go back to measurements, right-click on outlines (or their corresponding saved names in My Places) -&gt;
+
+-   Create an excel spreadsheet with the column titles: location (King or ID), date of image, image resolution, satellite, number of individuals, defined area size (should be the same for all analyses)
+
+-   Compare results to the above statement and hopefully to more detailed counts that I will find online.
 
 Results
 -------
@@ -110,3 +141,16 @@ References
 ----------
 
 You won't likely need this section at this stage, but when you're writing a paper, can insert references into RMardown docs - see <https://rmarkdown.rstudio.com/authoring_bibliographies_and_citations.html>.
+
+Literature and Website Sources
+------------------------------
+
+-   "Updated Statewide Abundance Estimates for the Florida Manatee" Technical Report No. 23, 2018; JEFFREY A. HOSTETLER, HOLLY H. EDWARDS, JULIEN MARTIN, AND PAUL SCHUELLER <https://f50006a.eos-intl.net/ELIBSQL12_F50006A_Documents/TR23-18Hostetler-USAEF.pdf>
+
+-   “New Aerial Survey and Hierarchical Model to Estimate Manatee Abundance”
+
+-   Status and threats analysis for the Florida manatee (Trichechus manatus latirostris), 2016, Scientific Investigations Report 2017-5030
+
+-   U.S. Fish and Wildlife Service West Indian Manatee Florida Stock SAR <https://www.fws.gov/ecological-services/es-library/pdfs/West-Indian-Manatee-FL-Final-SAR.pdf>
+
+-   "Combining information for monitoring at large spatial scales: first statewide abundance estimate of the Florida manatee" Biological Conservation 186 (2015) 44–51.
